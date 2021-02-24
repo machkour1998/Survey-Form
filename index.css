@@ -1,8 +1,7 @@
 body {
-	background: url('images/backgroud.jpg') no-repeat;
+	background: url('images/backgroud.jpg') no-repeat center center fixed;
 	background-size: cover;
-	background-position: center;
-	height: 100%;
+	min-height: 100%;
 }
 #main {
 	display: flex;
@@ -20,7 +19,7 @@ body {
 		rgba(18, 66, 99, 0.9)
 	);
 }
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
 	.container {
 		max-width: 640px;
 	}
