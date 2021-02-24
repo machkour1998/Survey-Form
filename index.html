@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="index.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Playfair+Display&family=Roboto:ital,wght@0,100;1,400&family=RocknRoll+One&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main id="main">
+			<header>
+				<h1 id="title">freeCodeCamp Survey Form</h1>
+				<p id="description">
+					Thank you for taking the time to help us improve the platform
+				</p>
+			</header>
+			<div class="container">
+				<form id="survey-form">
+					<!-- ################# input Name ########################-->
+					<div class="groupe-form">
+						<label id="name-label" for="name">Name </label>
+						<input
+							type="text"
+							placeholder="Enter your name"
+							id="name"
+							required
+						/>
+					</div>
+					<!-- ################# input Email ########################-->
+					<div class="groupe-form">
+						<label id="email-label" for="email">Email </label>
+						<input
+							type="email"
+							placeholder="Enter your email"
+							id="email"
+							required
+						/>
+					</div>
+					<!-- ################# input Age ########################-->
+					<div class="groupe-form">
+						<label id="number-label" for="Age"
+							>Age <span id="optional">(optional)</span></label
+						>
+						<input type="number" placeholder="Age" id="Age" min="11" max="99" />
+					</div>
+					<!-- ################# fieldset radio boutton ########################-->
+					<fieldset class="groupe-fieldset">
+						<legend>Would you recommend freeCodeCamp to a friend?</legend>
+						<label
+							><input type="radio" id="male" name="gender" value="male" />
+							Male</label
+						>
+						<label
+							><input type="radio" id="female" name="gender" value="female" />
+							Femail</label
+						>
+						<label
+							><input type="radio" id="other" name="gender" value="other" />
+							Other</label
+						>
+					</fieldset>
+					<!-- ################# dropdown ########################-->
+					<div class="groupe-form">
+						<label id="dropdown-label"> which animal do you like ?</label>
+						<select id="dropdown">
+							<option value="" id="choise-option">
+								Please choose an option
+							</option>
+							<option value="cat">Student</option>
+							<option value="dog">Full time job</option>
+						</select>
+					</div>
+					<!-- ################# fieldset checkbox ########################-->
+					<fieldset class="groupe-fieldset">
+						<legend>
+							What would you like to see improved? (Check all that apply)
+						</legend>
+						<label
+							><input type="checkbox" id="front-end" />Front-end Projects</label
+						>
+						<label
+							><input type="checkbox" id="back-end" />back-end Projects</label
+						>
+						<label
+							><input type="checkbox" id="data-visualization" />Data
+							Visualization</label
+						>
+						<label><input type="checkbox" id="challenges" />Challenges</label>
+					</fieldset>
+					<!-- ################# fieldset textarea ########################-->
+					<fieldset class="groupe-fieldset">
+						<legend>Any Comments or suggestions ?</legend>
+						<textarea
+							name="comment"
+							placeholder="Enter your Comment here..."
+							rows="10"
+						></textarea>
+					</fieldset>
+
+					<button type="submit" id="submit-button">Submit</button>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>
